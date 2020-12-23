@@ -21,6 +21,7 @@ namespace FocusDemo
         public Demo2()
         {
             InitializeComponent();
+         
         }
     }
 

@@ -14,20 +14,6 @@
         <Grid Width="300"
               HorizontalAlignment="Center"
               VerticalAlignment="Center">
-            <Grid.Resources>
-                <Style TargetType="Control">
-                    <Setter Property="Margin"
-                            Value="5" />
-                    <Setter Property="FontSize"
-                            Value="15" />
-                </Style>
-
-                <Style BasedOn="{StaticResource {x:Type Control}}"
-                       TargetType="Button" />
-
-                <Style BasedOn="{StaticResource {x:Type Control}}"
-                       TargetType="TextBox" />
-            </Grid.Resources>
             <StackPanel>
                 <StackPanel.Style>
                     <Style>
@@ -44,8 +30,7 @@
                 <TextBox x:Name="AddressTextBox" />
                 <TextBox x:Name="NameTextBox"
                          Text="{Binding Name, Mode=TwoWay}" />
-                <Button x:Name="NameTextBo3x"
-                        Margin="5"
+                <Button Margin="5"
                         Command="{Binding SubmitCommand}"
                         Content="Submit" />
             </StackPanel>

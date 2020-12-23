@@ -2,12 +2,20 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.19" />
     <PackageReference Include="Prism.Core" Version="8.0.0.1909" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Demo2 - 复制.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>Demo2.xaml.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
 
 </Project>

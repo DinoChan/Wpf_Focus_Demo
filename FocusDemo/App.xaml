@@ -4,6 +4,17 @@
              xmlns:local="clr-namespace:FocusDemo"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="Control">
+            <Setter Property="Margin"
+                    Value="5" />
+            <Setter Property="FontSize"
+                    Value="15" />
+        </Style>
+
+        <Style BasedOn="{StaticResource {x:Type Control}}"
+               TargetType="Button" />
+
+        <Style BasedOn="{StaticResource {x:Type Control}}"
+               TargetType="TextBox" />
     </Application.Resources>
 </Application>

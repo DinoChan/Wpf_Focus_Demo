@@ -4,6 +4,7 @@
         <WrapPanel>
             <local:Demo1 Margin="30"/>
             <local:Demo2 Margin="30" />
+            <local:Demo3 Margin="30" />
         </WrapPanel>
     </Grid>
 </Window>
