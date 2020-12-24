@@ -15,7 +15,7 @@
               HorizontalAlignment="Center"
               VerticalAlignment="Center">
             <Grid.Resources>
-                <Style BasedOn="{StaticResource {x:Type Control}}"
+                <Style BasedOn="{StaticResource {x:Type TextBox}}"
                        TargetType="TextBox">
                     <Style.Triggers>
                         <DataTrigger Binding="{Binding (Validation.HasError), RelativeSource={RelativeSource Mode=Self}}"

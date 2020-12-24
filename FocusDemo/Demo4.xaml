@@ -16,7 +16,7 @@
                     VerticalAlignment="Center">
             <StackPanel Width="250">
                 <StackPanel.Resources>
-                    <Style BasedOn="{StaticResource {x:Type Control}}"
+                    <Style BasedOn="{StaticResource {x:Type TextBox}}"
                            TargetType="TextBox">
                         <Setter Property="local:FocusService.FocusableElement"
                                 Value="{Binding FocusElement}" />
