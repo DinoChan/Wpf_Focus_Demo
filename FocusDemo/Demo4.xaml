@@ -11,16 +11,20 @@
     </UserControl.DataContext>
 
     <Grid>
-        <StackPanel Orientation="Horizontal"
+        <StackPanel Orientation="Horizontal" 
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center">
             <StackPanel Width="250">
-                <TextBox x:Name="ElementA"
-                         local:FocusService.FocusableElement="{Binding FocusElement}"/>
-                <TextBox x:Name="ElementB"
-                         local:FocusService.FocusableElement="{Binding FocusElement}" />
-                <TextBox x:Name="ElementC"
-                         local:FocusService.FocusableElement="{Binding FocusElement}" />
+                <StackPanel.Resources>
+                    <Style BasedOn="{StaticResource {x:Type Control}}"
+                           TargetType="TextBox">
+                        <Setter Property="local:FocusService.FocusableElement"
+                                Value="{Binding FocusElement}" />
+                    </Style>
+                </StackPanel.Resources>
+                <TextBox x:Name="ElementA"/>
+                <TextBox x:Name="ElementB"/>
+                <TextBox x:Name="ElementC"/>
             </StackPanel>
             <StackPanel>
                 <Button Margin="5"
