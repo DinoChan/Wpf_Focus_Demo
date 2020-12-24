@@ -18,6 +18,7 @@
                 <local:Demo3 Margin="30" />
                 <local:Demo4 Margin="30" />
                 <local:Demo5 Margin="30" />
+                <local:Demo8 Margin="30" />
             </WrapPanel>
         </ScrollViewer>
     </Grid>
