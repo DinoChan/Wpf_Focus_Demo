@@ -45,7 +45,7 @@ namespace FocusDemo
 
         protected virtual void Submit(string parameter)
         {
-            FocusElement = string.Empty;
+            FocusElement = null;
             FocusElement = parameter;
         }
     }

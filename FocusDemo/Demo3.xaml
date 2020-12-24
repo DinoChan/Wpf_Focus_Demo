@@ -38,7 +38,7 @@
                 </Style>
             </StackPanel.Style>
 
-            <StackPanel Width="300">
+            <StackPanel Width="250">
                 <TextBox x:Name="ElementA" />
                 <TextBox x:Name="ElementB" />
                 <TextBox x:Name="ElementC" />

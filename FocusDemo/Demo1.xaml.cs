@@ -38,15 +38,6 @@ namespace FocusDemo
             SubmitCommand = new DelegateCommand(Submit);
         }
 
-
-        private bool _isNameHasFocus;
-
-        public bool IsNameHasFocus
-        {
-            get => _isNameHasFocus;
-            set => SetProperty(ref _isNameHasFocus, value);
-        }
-
         protected virtual void Submit()
         {
             ErrorsContainer.ClearErrors();
