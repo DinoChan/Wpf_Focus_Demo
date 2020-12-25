@@ -22,9 +22,9 @@
                                 Value="True" />
                     </Style>
                 </StackPanel.Resources>
-                <TextBox Text="{Binding Name, Mode=TwoWay,NotifyOnValidationError=True}" />
-                <TextBox Text="{Binding Name, Mode=TwoWay,NotifyOnValidationError=True}" />
-                <TextBox Text="{Binding Name, Mode=TwoWay,NotifyOnValidationError=True}" />
+                <TextBox Text="{Binding Name, Mode=TwoWay, NotifyOnValidationError=True}" />
+                <TextBox Text="{Binding Name, Mode=TwoWay, NotifyOnValidationError=True}" />
+                <TextBox Text="{Binding Name, Mode=TwoWay, NotifyOnValidationError=True}" />
                 <Button Margin="5"
                         Command="{Binding SubmitCommand}"
                         Content="Submit" />

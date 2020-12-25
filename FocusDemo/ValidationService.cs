@@ -42,11 +42,11 @@ namespace FocusDemo
             var target = obj as UIElement;
             Validation.AddErrorHandler(target, (s, e) =>
             {
-                var validationScope = target.GetVisualAncestors().OfType<UIElement>().FirstOrDefault(d => GetIsValidationScope(d));
-                if (validationScope == null)
-                    validationScope = Window.GetWindow(target).Content as UIElement;
+                var root = target.GetVisualAncestors().OfType<UIElement>().FirstOrDefault(d => GetIsValidationScope(d));
+                if (root == null)
+                    root = Window.GetWindow(target).Content as UIElement;
 
-                var errorElement = validationScope.GetVisualDescendants().OfType<UIElement>().FirstOrDefault(u => Validation.GetHasError(u));
+                var errorElement = root.GetVisualDescendants().OfType<UIElement>().FirstOrDefault(u => Validation.GetHasError(u));
                 if (errorElement != null && errorElement.IsKeyboardFocused == false)
                     errorElement.Focus();
             });
