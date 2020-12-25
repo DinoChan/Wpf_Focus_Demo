@@ -14,14 +14,14 @@
         <Grid Width="300"
               HorizontalAlignment="Center"
               VerticalAlignment="Center">
-            <Grid.Resources>
-                <Style BasedOn="{StaticResource {x:Type TextBox}}"
-                       TargetType="TextBox">
-                    <Setter Property="local:ValidationService.AutoFocusWhenValidationError"
-                            Value="True" />
-                </Style>
-            </Grid.Resources>
             <StackPanel local:ValidationService.IsValidationScope="True">
+                <StackPanel.Resources>
+                    <Style BasedOn="{StaticResource {x:Type TextBox}}"
+                           TargetType="TextBox">
+                        <Setter Property="local:ValidationService.AutoFocusWhenValidationError"
+                                Value="True" />
+                    </Style>
+                </StackPanel.Resources>
                 <TextBox Text="{Binding Name, Mode=TwoWay,NotifyOnValidationError=True}" />
                 <TextBox Text="{Binding Name, Mode=TwoWay,NotifyOnValidationError=True}" />
                 <TextBox Text="{Binding Name, Mode=TwoWay,NotifyOnValidationError=True}" />
